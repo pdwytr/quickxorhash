@@ -1,6 +1,6 @@
 # quickxorhash
 
-A small CLI utility that computes **QuickXorHash** for a file and prints the result in **base64**.
+A CLI utility that computes **QuickXorHash** for a file and prints the result in **base64**.
 
 This is useful when you need hash parity with Microsoft Graph API / OneDrive metadata.  
 Windows does not provide a built-in QuickXorHash command, so this project provides a reliable way to generate it locally.
