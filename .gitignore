@@ -1,0 +1,15 @@
+# Build output
+/quickxorhash
+/quickxorhash.exe
+*.exe
+/dist/
+
+# Test and coverage artifacts
+*.test
+*.out
+coverage.*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
