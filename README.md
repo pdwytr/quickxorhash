@@ -118,6 +118,17 @@ QuickXorHash XORs each input byte into a 160-bit register at a bit offset that a
 
 The implementation is tested against rclone's known-answer vectors, against vectors generated with rclone's implementation, and against a bit-by-bit reference implementation in the test suite.
 
+## Project structure
+
+```
+.
+├── quickxorhash.go        # hash.Hash implementation (package quickxorhash)
+├── quickxorhash_test.go   # unit and reference-implementation tests
+├── vectors_test.go        # known-answer test vectors
+├── cmd/quickxorhash/      # command-line tool
+└── .github/workflows/     # CI and tagged cross-platform releases
+```
+
 ## License
 
 [MIT](LICENSE). Test vectors and the buffered design follow [rclone](https://github.com/rclone/rclone)'s `quickxorhash` package (MIT).
