@@ -4,8 +4,6 @@ Compute the Microsoft Graph / OneDrive **QuickXorHash** of local files, base64-e
 
 Graph returns QuickXorHash for files in OneDrive and SharePoint, but nothing that ships with Windows or macOS can compute it (`Get-FileHash` and `shasum` don't support it). Without a local hash you can't confirm that an upload or migration arrived intact. This tool fills that gap: a single static binary with no dependencies, plus a Go package that implements `hash.Hash`.
 
-It has been used in production migration workflows to verify files before and after upload.
-
 ## Install
 
 ### Prebuilt binaries
